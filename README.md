@@ -14,8 +14,15 @@ It has two main process to load cdr data and to load router data into kafka
 
 To execute the load of cdrs it must be executed: `java -cp data-generator-ds-0.0.1-dep.jar main.CdrsKafkaGenerator`
 Parameters for this are:
-
-
+```
+usage: KafkaGenerator
+ -b,--broker <arg>       List of kafka bootstrap servers (default:
+                         127.0.0.1:9092)
+ -d,--date <arg>         Date for the input data, format [yyyy-mm-dd]
+ -h,--help               Print this help
+ -n,--numrecords <arg>   Generate n records per second (default 500)
+ -t,--topic <arg>        Topic name (default: topic_in_stream)
+```
 
 To execute the load of cdrs it must be executed: `java -cp data-generator-ds-0.0.1-dep.jar main.SOBKafkaGenerator`
 ```
@@ -33,5 +40,5 @@ usage: KafkaGenerator
  -x,--numthreads <arg>    Number of threads (default: 1)
  -z,--nullkeys <arg>      % of null keys (default: 0.0)
 ```
-
+For a quick start only parameters -b <broker-list> and -t <topic> should be enough
 
