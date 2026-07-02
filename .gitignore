@@ -1,0 +1,7 @@
+java-gendata/.classpath
+java-gendata/.project
+java-gendata/target/
+java-kafka-streams/.classpath
+java-kafka-streams/.project
+java-kafka-streams/.settings/
+java-kafka-streams/target/
