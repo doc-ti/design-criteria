@@ -1,6 +1,6 @@
-# design-criteria
+# Design Criteria for Hybrid Big Data systems
 
-This is the README file for the replication package of the desing criteria for hydrid big data architectures
+This is the README file for the replication package of the design criteria for hydrid big data architectures
 
 This package is composed by the following elements:
 - java-gendata: a java project to generate random data and insert into kafka
