@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.gendata.cdrs;
+package edu.doc_ti.designcriteria.gendata.cdrs;
 
 import java.text.ParseException;
 import java.util.Date;

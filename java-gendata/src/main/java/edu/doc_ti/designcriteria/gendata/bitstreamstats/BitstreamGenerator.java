@@ -1,5 +1,5 @@
 
-package edu.doc_ti.phivalidation.gendata.bitstreamstats ;
+package edu.doc_ti.designcriteria.gendata.bitstreamstats ;
 
 import java.io.BufferedOutputStream;
 import java.io.File;

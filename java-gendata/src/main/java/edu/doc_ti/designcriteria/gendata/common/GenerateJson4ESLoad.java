@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.gendata.common;
+package edu.doc_ti.designcriteria.gendata.common;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

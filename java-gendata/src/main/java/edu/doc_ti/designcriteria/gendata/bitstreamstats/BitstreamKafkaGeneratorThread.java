@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.gendata.bitstreamstats;
+package edu.doc_ti.designcriteria.gendata.bitstreamstats;
 
 import java.util.ArrayList;
 import java.util.Properties;

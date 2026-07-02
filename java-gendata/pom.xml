@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>edu.doc_ti.phivalidation</groupId>
-	<artifactId>data-generator</artifactId>
+	<groupId>edu.doc_ti.design_criteria</groupId>
+	<artifactId>data-generator-ds</artifactId>
 	<packaging>jar</packaging>
 	<name>data-generator</name>
 	<description>data-generator</description>

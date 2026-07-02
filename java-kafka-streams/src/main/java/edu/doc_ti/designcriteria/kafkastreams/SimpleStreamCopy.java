@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.kafkastreams;
+package edu.doc_ti.designcriteria.kafkastreams;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;

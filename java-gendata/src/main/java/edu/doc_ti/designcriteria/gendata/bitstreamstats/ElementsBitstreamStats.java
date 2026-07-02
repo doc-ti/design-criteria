@@ -1,9 +1,9 @@
-package edu.doc_ti.phivalidation.gendata.bitstreamstats;
+package edu.doc_ti.designcriteria.gendata.bitstreamstats;
 
 import java.util.Hashtable;
 
-import edu.doc_ti.phivalidation.gendata.common.CoreElements;
-import edu.doc_ti.phivalidation.gendata.common.DistribData;
+import edu.doc_ti.designcriteria.gendata.common.CoreElements;
+import edu.doc_ti.designcriteria.gendata.common.DistribData;
 import net.datafaker.providers.base.BaseProviders;
 
 public class ElementsBitstreamStats extends CoreElements {

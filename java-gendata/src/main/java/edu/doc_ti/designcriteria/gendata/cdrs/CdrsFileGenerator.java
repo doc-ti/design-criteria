@@ -1,5 +1,5 @@
 
-package edu.doc_ti.phivalidation.gendata.cdrs ;
+package edu.doc_ti.designcriteria.gendata.cdrs ;
 
 import java.io.BufferedOutputStream;
 import java.io.File;

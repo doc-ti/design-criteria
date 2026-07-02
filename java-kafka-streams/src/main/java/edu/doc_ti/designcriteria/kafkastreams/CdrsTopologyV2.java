@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.kafkastreams;
+package edu.doc_ti.designcriteria.kafkastreams;
 
 
 import java.text.SimpleDateFormat;
@@ -12,7 +12,7 @@ import org.apache.kafka.streams.Topology;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import edu.doc_ti.phivalidation.common.objects.PropertyLoader;
+import edu.doc_ti.designcriteria.common.objects.PropertyLoader;
 
 public class CdrsTopologyV2 {
 	private static final Logger LOG = LoggerFactory.getLogger(ObjectProcessor.class);

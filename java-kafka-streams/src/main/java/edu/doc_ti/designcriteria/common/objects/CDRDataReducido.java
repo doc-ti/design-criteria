@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.common.objects;
+package edu.doc_ti.designcriteria.common.objects;
 
 import java.util.HashMap;
 import java.util.Map;

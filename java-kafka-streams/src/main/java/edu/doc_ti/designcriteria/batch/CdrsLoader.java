@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.batch;
+package edu.doc_ti.designcriteria.batch;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,11 +16,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import co.elastic.clients.elasticsearch._helpers.bulk.BulkIngester;
 import co.elastic.clients.util.BinaryData;
 import co.elastic.clients.util.ContentType;
-import edu.doc_ti.phivalidation.common.objects.CDRData;
-import edu.doc_ti.phivalidation.common.objects.MyESUtils;
-import edu.doc_ti.phivalidation.common.objects.MyFileWriter;
-import edu.doc_ti.phivalidation.common.objects.ObjStreaming;
-import edu.doc_ti.phivalidation.common.objects.PropertyLoader;
+import edu.doc_ti.designcriteria.common.objects.CDRData;
+import edu.doc_ti.designcriteria.common.objects.MyESUtils;
+import edu.doc_ti.designcriteria.common.objects.MyFileWriter;
+import edu.doc_ti.designcriteria.common.objects.ObjStreaming;
+import edu.doc_ti.designcriteria.common.objects.PropertyLoader;
 
 public class CdrsLoader {
 

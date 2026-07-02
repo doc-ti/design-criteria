@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.common.objects.test;
+package edu.doc_ti.designcriteria.common.objects.test;
 
 import java.net.InetSocketAddress;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.kafkastreams;
+package edu.doc_ti.designcriteria.kafkastreams;
 
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
@@ -36,14 +36,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import co.elastic.clients.elasticsearch._helpers.bulk.BulkIngester;
 import co.elastic.clients.util.BinaryData;
 import co.elastic.clients.util.ContentType;
-import edu.doc_ti.phivalidation.common.objects.CDRData;
-import edu.doc_ti.phivalidation.common.objects.CDRDataReducido;
-import edu.doc_ti.phivalidation.common.objects.MyESUtils;
-import edu.doc_ti.phivalidation.common.objects.MyFileWriter;
-import edu.doc_ti.phivalidation.common.objects.ObjStreaming;
-import edu.doc_ti.phivalidation.common.objects.PropertyLoader;
-import edu.doc_ti.phivalidation.common.objects.SOBData;
-import edu.doc_ti.phivalidation.common.objects.SOBPingData;
+import edu.doc_ti.designcriteria.common.objects.CDRData;
+import edu.doc_ti.designcriteria.common.objects.CDRDataReducido;
+import edu.doc_ti.designcriteria.common.objects.MyESUtils;
+import edu.doc_ti.designcriteria.common.objects.MyFileWriter;
+import edu.doc_ti.designcriteria.common.objects.ObjStreaming;
+import edu.doc_ti.designcriteria.common.objects.PropertyLoader;
+import edu.doc_ti.designcriteria.common.objects.SOBData;
+import edu.doc_ti.designcriteria.common.objects.SOBPingData;
 
 
 public class ObjectProcessor implements Processor<String, String, String, String> {

@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.gendata.cdrs;
+package edu.doc_ti.designcriteria.gendata.cdrs;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,9 +8,9 @@ import org.apache.kafka.common.Uuid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import edu.doc_ti.phivalidation.gendata.common.CoreElements;
-import edu.doc_ti.phivalidation.gendata.common.DistribData;
-import edu.doc_ti.phivalidation.gendata.common.HostnameFetcher;
+import edu.doc_ti.designcriteria.gendata.common.CoreElements;
+import edu.doc_ti.designcriteria.gendata.common.DistribData;
+import edu.doc_ti.designcriteria.gendata.common.HostnameFetcher;
 import net.datafaker.providers.base.BaseProviders;
 
 public class MyElements extends CoreElements {

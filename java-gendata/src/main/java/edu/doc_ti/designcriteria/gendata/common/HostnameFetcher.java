@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.gendata.common;
+package edu.doc_ti.designcriteria.gendata.common;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.gendata.bitstreamstats;
+package edu.doc_ti.designcriteria.gendata.bitstreamstats;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;

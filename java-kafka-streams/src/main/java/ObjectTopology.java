@@ -1,6 +1,6 @@
 
 
-import edu.doc_ti.phivalidation.kafkastreams.CdrsTopologyV2;
+import edu.doc_ti.designcriteria.kafkastreams.CdrsTopologyV2;
 
 
 public class ObjectTopology {

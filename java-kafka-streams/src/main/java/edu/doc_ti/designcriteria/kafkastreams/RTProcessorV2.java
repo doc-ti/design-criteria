@@ -1,4 +1,4 @@
-package edu.doc_ti.phivalidation.kafkastreams;
+package edu.doc_ti.designcriteria.kafkastreams;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
