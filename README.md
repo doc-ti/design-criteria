@@ -8,7 +8,8 @@ This package is composed by the following elements:
 
 
 ## java-gendata
-Project can be compiled with the command: `mvn clean assembly:single`, 
+Project can be compiled with the command: `mvn clean compile assembly:single`
+
 It generates a file .jar with all the necessary dependencies to be executed (fat jar): data-generator-ds-0.0.1-dep.jar
 
 It has two main process to load cdr data and to load router data into kafka
@@ -44,7 +45,8 @@ usage: KafkaGenerator
 For a quick start only parameters -b <broker-list> and -t <topic> should be enough
 
 ## java-kafka-streams
-Project can be compiled with the command: `mvn clean assembly:single`
+Project can be compiled with the command: `mvn clean compile assembly:single`
+
 It generates a file .jar with all the necessary dependencies to be executed (fat jar): java-kafka-streams-ds-0.0.1-dep.jar
 
 
