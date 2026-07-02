@@ -1,0 +1,121 @@
+tarifa
+Tarifa Conecta+
+Plan Ilimitado Pro
+Tarifa SmartFlex
+Plan Ahorro Total
+Tarifa DataMax
+Plan Libre 5G
+Tarifa Básica Go
+Plan Infinity
+Tarifa Plus20
+Plan Familiar XL
+Tarifa UltraFast
+Plan EcoSaver
+Tarifa Sin Límites
+Plan Digital Pro
+Tarifa SmartConnect
+Plan TotalGo
+Tarifa Red+ Plus
+Plan FlexiData
+Tarifa MiniGo
+Plan Premium 5G
+Tarifa Simple
+Plan NavegaLibre
+Tarifa TotalFlex
+Plan SpeedMax
+Tarifa Económica
+Plan MegaData
+Tarifa Light
+Plan PowerUser
+Tarifa MultiConecta
+Plan GoNow
+Tarifa Express
+Plan FamilyShare
+Tarifa Ultra
+Plan SmartChoice
+Tarifa EasyConnect
+Plan Turbo5G
+Tarifa Sin Fronteras
+Plan DataFlow
+Tarifa JustGo
+Plan SuperFlex
+Tarifa Compacta
+Plan RedPower
+Tarifa InfinityGo
+Plan ZenData
+Tarifa Vital
+Plan AlwaysOn
+Tarifa MaxSpeed
+Plan TotalConexión
+Tarifa ProConnect
+Plan FreeWay
+Tarifa HyperData
+Plan GlobalLink
+Tarifa Vision
+Plan Advanced
+Tarifa DataKing
+Plan SuperConecta
+Tarifa EcoGo
+Plan Ultra5G
+Tarifa MultiFlex
+Plan AhorroGo
+Tarifa LibreConexión
+Plan OneStep
+Tarifa ConnectNow
+Plan SmartFlow
+Tarifa PowerPlus
+Plan SpeedConnect
+Tarifa Simplifica
+Plan FastLane
+Tarifa Supra
+Plan BigData
+Tarifa Prime
+Plan FamilyFirst
+Tarifa MegaFlex
+Plan FreeWorld
+Tarifa StartUp
+Plan InfinityLink
+Tarifa TotalGo
+Plan DigitalGo
+Tarifa ConnectPro
+Plan SmartLink
+Tarifa PowerGo
+Plan RedConnect
+Tarifa NextGen
+Plan DataSmart
+Tarifa UltraConnect
+Plan FlexGo
+Tarifa EcoSmart
+Plan GoGreen
+Tarifa LinkNow
+Plan Dynamic
+Tarifa FastData
+Plan GlobalGo
+Tarifa DataWave
+Plan Horizon
+Tarifa OpenLink
+Plan Velocity
+Tarifa SmartWay
+Plan EasyFlow
+Tarifa NextStep
+Plan PrimeGo
+Tarifa SupraMax
+Plan TotalEase
+Tarifa InfinityPro
+Plan LinkPlus
+Tarifa DataBoost
+Plan UltraFlex
+Tarifa EcoLink
+Plan PowerFlex
+Tarifa RedBoost
+Plan SmartBoost
+Tarifa DataFlow
+Plan Ultimate
+Tarifa MegaLink
+Plan Freedom
+Tarifa SmartSurf
+Plan ExpressGo
+Tarifa NextGo
+Plan AhorroPlus
+Tarifa ZenConnect
+Plan SupraGo

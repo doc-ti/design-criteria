@@ -1,0 +1,662 @@
+mcc+mnc;operador;pais
+20201;Cosmote;Grecia
+20205;Vodafone Panafon;Grecia
+20209;Qtelecom;Grecia
+20210;Stet Hellas (TIM);Grecia
+20402;Tele2;Holanda
+20404;Vodafone;Holanda
+20408;KPN;Holanda
+20412;Telfort / O2;Holanda
+20416;T-Mobile;Holanda
+20420;T-Mobile;Holanda
+20601;Belgacom;Belgica
+20604;Proximus;Belgica
+20605;Telenet;Belgica
+20608;NETHYS;Belgica
+20610;Mobistar;Belgica
+20620;Base;Belgica
+20801;Orange;Francia
+20805;Globalstar - SATeLITE;Francia
+20809;SFR;Francia
+20810;SFR;Francia
+20815;FreeMobile;Francia
+20820;BouyguesTelecom;Francia
+20825;LYCAMOBILE;Francia
+21201;Monaco Telecom;Monaco
+21210;Monaco Telecom;Monaco
+21303;STA;Andorra
+21401;VODAFONE;ESPAÑA
+21402;FIBRACAT;ESPAÑA
+21403;ORANGE;ESPAÑA
+21404;YOIGO;ESPAÑA
+21405;MOVISTAR;ESPAÑA
+21406;VODAFONE;ESPAÑA
+21407;MOVISTAR;ESPAÑA
+21408;EUSKALTEL;ESPAÑA
+21409;ORANGE;ESPAÑA
+21410;OPERA;ESPAÑA
+21415;BT;ESPAÑA
+21416;TELECABLE;ESPAÑA
+21417;R;ESPAÑA
+21418;ONO;ESPAÑA
+21419;SIMYO;ESPAÑA
+21421;JAZZTEL;ESPAÑA
+21422;DIGIMOBIL;ESPAÑA
+21423;BARABLU;ESPAÑA
+21425;LYCA;ESPAÑA
+21427;TRUEPHONE;ESPAÑA
+21601;Telenor;Hungria
+21630;T-Mobile;Hungria
+21670;Vodafone;Hungria
+21803;HT Mobile (Eronet);Bosnia&Herzegovina
+21805;m:tel;Bosnia&Herzegovina
+21890;BH (PTT BIM);Bosnia&Herzegovina
+21901;T-Mobile;Croacia
+21902;Tele2;Croacia
+21910;VIP-NET;Croacia
+22001;Telenor;Serbia
+22002;Telenor;Montenegro
+22003;Telekom Srbija;Serbia
+22004;T-Mobile;Montenegro
+22005;VIP Mobile;Serbia
+22201;TIM;Italia
+22210;Vodafone Omnitel;Italia
+22236;DIGI;Italia
+22250;FREE MOBILE;Italia
+22256;MASS RESPONSE;Italia
+22288;Wind;Italia
+22299;H3G;Italia
+22601;Vodafone;Rumania
+22603;Cosmote;Rumania
+22605;Digimobil;Rumania
+22610;Orange;Rumania
+22801;Swisscom;Suiza
+22802;Sunrise;Suiza
+22803;Orange;Suiza
+22853;UPC CABLECOM;Suiza
+23001;T-Mobile;Chequia
+23002;Telefonica O2;Chequia
+23003;Vodafone;Chequia
+23101;Orange;Eslovaquia
+23102;Slovak Telekom;Eslovaquia
+23106;Telefonica (O2);Eslovaquia
+23201;Mobilkom;Austria
+23203;T-Mobile;Austria
+23205;Orange;Austria
+23207;T-Mobile;Austria
+23210;H3G;Austria
+23211;MOBILCOM;Austria
+23212;Orange;Austria
+23213;T-MOBILE;Austria
+23217;MASS RESPONSE;Austria
+23403;Airtel Jersey;Isla de Jersey
+23410;Telefonica (O2) (BTCellnet);Reino Unido
+23415;Vodafone;Reino Unido
+23420;H3G;Reino Unido
+23430;EE;Reino Unido
+23433;Orange;Reino Unido
+23450;Jersey Telecom;Isla de Jersey
+23455;C&W;Guernsey Island
+23457;SKY;Reino Unido
+23458;MANX;Isla de Man/UK
+23801;Teledanmark/TDC;Dinamarca
+23802;Telenor;Dinamarca
+23806;Hi3G;Dinamarca
+23820;Telia;Dinamarca
+24001;Telia Sonera;Suecia
+24002;Hi3G;Suecia
+24004;Hi3G;Suecia
+24007;Tele2;Suecia
+24008;Telenor;Suecia
+24010;Tele2;Suecia
+24014;TDC;Suecia
+24042;Telenor;Suecia
+24201;Telenor;Noruega
+24202;NetCom GSM;Noruega
+24205;Network Norway;Noruega
+24208;TDC;Noruega
+24214;ICE;Noruega
+24403;DNA;Finlandia
+24405;Elisa;Finlandia
+24412;DNA;Finlandia
+24414;Alands;Finlandia
+24421;Elisa;Finlandia
+24491;Telia Sonera;Finlandia
+24601;Telia Sonera;Lituania
+24602;Bite;Lituania
+24603;Tele2;Lituania
+24701;LMT;Letonia/latvia
+24702;Tele2;Letonia/latvia
+24705;Bite;Letonia/latvia
+24801;EMT (TeliaSonera);Estonia
+24802;ELISA (Radiolinja);Estonia
+24803;Tele2;Estonia
+25001;MTS;Rusia
+25002;Megafon;Rusia
+25003;NCC;Rusia
+25005;ETK YeniseiTelekom;RUSIA
+25012;BWC BaykalWestCom;Rusia
+25017;Uraltel;Rusia
+25020;Tele2;Rusia
+25027;Smart Kazan;Rusia
+25035;Ekaterimburg Motiv;Rusia
+25039;Uraltel;Rusia
+25077;N.D.;Rusia
+25099;Vimpelcom;Rusia
+25501;UMC/MTS;Ucrania
+25502;BEELINE/URS;Ucrania
+25503;KYIVSTAR;Ucrania
+25505;GOLDEN TELECOM;Ucrania
+25506;ASTELIT;Ucrania
+25701;VELCOM (MDC);Bielorrusia
+25702;MTS;Bielorrusia
+25901;Orange;Moldavia
+25902;Moldcell;Moldavia
+26001;Polkomtel;Polonia
+26002;ERA;Polonia
+26003;Orange;Polonia
+26006;P4;Polonia
+26201;T-Mobile;Alemania
+26202;Vodafone;Alemania
+26203;E-Plus;Alemania
+26207;O2;Alemania
+26208;O2;Alemania
+26601;GIBTEL;Gibraltar
+26801;Vodafone Telecel;Portugal
+26803;Optimus;Portugal
+26806;TMN;Portugal
+26880;MEO;Portugal
+27001;P&T;Luxemburgo
+27002;MTX Connect;Luxemburgo
+27077;Tango;Luxemburgo
+27099;Orange;Luxemburgo
+27201;Vodafone;Irlanda
+27202;O2Communication;Irlanda
+27203;Meteor;Irlanda
+27205;H3G;Irlanda
+27211;TESCO MOBILE;Irlanda
+27401;SIMINN;Islandia
+27402;OGVodafone;Feroe
+27404;IMC;Islandia
+27408;SIMINN;Islandia
+27411;Nova;Islandia
+27601;AMC;Albania
+27602;Vodafone;Albania
+27603;Eagle;Albania
+27604;Plus Communication;Albania
+27801;Vodafone;Malta
+27821;GoMobile;Malta
+27877;Melita;Malta
+28001;CYTA;Chipre
+28010;MTN;Chipre
+28020;Primetel;Chipre
+28201;GEOCELL;Georgia
+28202;MAGTICOMGSM;Georgia
+28204;Mobitel;Georgia
+28305;K Telecom;Armenia
+28310;Orange;Armenia
+28401;Mobitel;Bulgaria
+28403;VivatelBTC;BULGARIA
+28405;Globul;Bulgaria
+28601;Turkcell;Turquia
+28602;Vodafone;Turquia
+28603;Avea;Turquia
+28604;Avea;Turquia
+28801;Faroese Telecom;Feroe (Islas)
+29001;TeleGroenlandia;Groenlandia
+29201;San Marino Telecom / Prima;San Marino
+29340;Vodafone;Eslovenia
+29341;Mobitel;Eslovenia
+29364;T-2;Eslovenia
+29370;Tusmobil;Eslovenia
+29401;T-Mobile;Macedonia
+29402;Cosmofon;Macedonia
+29403;VIP;Macedonia
+29502;Orange;Liechtenstein
+29505;Mobilkom;Liechtenstein
+29509;EMNIFY;Liechtenstein
+29510;TELECOM LI;Liechtenstein
+29577;Alpcom (Tango Tele2 AG);Liechtenstein
+29701;Telenor;Montenegro
+29702;T-Mobile;Montenegro
+29703;Mtel;Montenegro
+30222;Telus;Canada
+30237;Rogers;Canada
+30250;Videotron;Canada
+30261;Bell;Canada
+30269;Bell;Canada
+30272;Rogers;Canada
+30276;Telus;Canada
+30278;Saktel;Canada
+30801;SPM Telecom;San Pierre Miquelon
+31003;AT&T Cingular;EEUU
+31012;Nextel Sprint;EEUU
+31015;AT&T Cingular;EEUU
+31016;T-Mobile USA;EEUU
+31017;AT&T Cingular;EEUU
+31020;T-Mobile USA;EEUU
+31021;T-Mobile USA;EEUU
+31024;T-Mobile USA;EEUU
+31025;T-Mobile USA;EEUU
+31026;T-Mobile USA;EEUU
+31027;T-Mobile USA;EEUU
+31028;AT&T Cingular;EEUU
+31031;T-Mobile USA;EEUU
+31038;AT&T Cingular;EEUU
+31041;AT&T Cingular;EEUU
+31042;Cincinnati Bell Wireless;EEUU
+31055;MANX;Isla de Man/UK
+31072;Manx;EEUU
+31148;Verison Wireless;EEUU
+31601;Nextel Sprint;EEUU
+33011;Claro;Puerto Rico/EEUU
+33402;Telcel;Mexico
+33403;Movistar;Mexico
+33405;IUSACell;Mexico
+33414;ALTAN REDES;Mexico
+33805;Digicel;Jamaica
+33807;Claro;Jamaica
+33818;C&W;Jamaica
+34001;Orange;Francia
+34020;Digicel Antilles;San Martin (Antillas Fr.)
+34403;APUA;Antigua y Barbuda
+34857;CCT;Islas Virgenes britanicas
+35001;AT&T;Bermuda
+36251;TELCELL ST MAARTEN;Antillas Hol. (Saint Maarten/San Martin)
+36269;POLYCOM;Curasao
+36301;Setar;Aruba
+36302;Digicel Aruba;Aruba
+36439;BTC;Bahamas
+36801;Cubacell;Cuba
+37001;Orange;Republica Dominicana
+37002;CLARO;Republica Dominicana
+37004;VIVA (Trilogy);Republica Dominicana
+37201;Comcel;Haiti
+37412;TSTT;Trinidad & Tobago
+40001;Azercell;Azerbaiyan
+40002;Bakcell;Azerbaiyan
+40004;Azerfon;Azerbaiyan
+40101;Kar Tel;Kazajistan
+40102;Kcell;Kazajistan
+40177;Tele2;Kazajistan
+40402;Bharti Airtel;India
+40403;Bharti Airtel;India
+40404;IDEA Delhi;India
+40405;Vodafone Essar Gujarat;India
+40407;IDEA Andhra Pr;India
+40410;Bharti Airtel;India
+40411;Vodafone New Delhi;India
+40412;IDEA Haryana;India
+40414;IDEA Punjab;India
+40416;Bharti Airtel;India
+40417;Aircel;India
+40419;IDEA Kerala;India
+40420;Vodafone Essar Mumbai;India
+40421;BPL Mobile Comms;India
+40422;IDEA Maharashtra-Birla;India
+40424;IDEA Gujarat;India
+40425;Aircel;India
+40427;Vodafone Maharashtra;India
+40428;Aircel;India
+40429;Aircel;India
+40430;Vodafone Kolkata;India
+40431;Bharti Airtel;India
+40433;Aircel;India
+40435;Aircel;India
+40437;Aircel;India
+40440;Bharti Airtel;India
+40441;Aircel;India
+40442;Aircel;India
+40443;Vodafone Tamilnadu;India
+40444;IDEA Karnataka;India
+40445;Bharti Airtel;India
+40446;Vodafone Kerala;India
+40449;Bharti Airtel;India
+40456;IDEA UW & Uttar Pradesh;India
+40467;Reliance Telecom Limited;India
+40470;Bharti Airtel;India
+40474;BSNL;India
+40478;IDEA Madhya Pradesh;India
+40482;IDEA Himachal Pradesh;India
+40487;IDEA Rajasthan;India
+40489;IDEA India Uttar Pradesh (UP)-East;India
+40490;Bharti Airtel;India
+40491;Aircel;India
+40492;Bharti Airtel;India
+40493;Bharti Airtel;India
+40494;Bharti Airtel;India
+40495;Bharti Airtel;India
+40496;Bharti Airtel;India
+40497;Bharti Airtel;India
+40498;Bharti Airtel;India
+40502;Tata;India
+40503;Tata;India
+40504;Tata;India
+40551;Bharti Airtel;India
+40552;Bharti Airtel;India
+40553;Bharti Airtel;India
+40554;Bharti Airtel;India
+40555;Bharti Airtel;India
+40556;Bharti Airtel;India
+40570;IDEA Bihar Jhark;India
+40579;IDEA Mumbai;India
+40580;Aircel;India
+40584;IDEA Kolkata;India
+40585;IDEA Tamil Nadu Ch;India
+41003;Ufone;Pakistan
+41004;CMPak Limited;Pakistan
+41006;Telenor;Pakistan
+41220;TDAC;Afganistan
+41250;Etisalat;Afganistan
+41301;Mobitel;Sri Lanka
+41302;Dialog Telekom;Sri Lanka
+41303;Etisalat (Tigo);Sri Lanka
+41305;Bharti Airtel;Sri Lanka
+41401;MECTel;Myanmar
+41405;Ooredoo;Myanmar
+41501;MIC1;Libano
+41503;MIC2;Libano
+41601;FastLink;Jordania
+41603;Xpress;Jordania
+41677;Orange;Jordania
+41702;MTN;Syria
+41805;Asia Cell;Irak
+41820;Atheer Telecom;Irak
+41830;Orascom Telecom;Irak
+41840;Korek;Irak
+41902;Vodafone;Kuwait
+41903;Al-Wataniya Telecom;Kuwait
+41904;VIVA - KTC;Kuwait
+42001;Saudi Telecom;Arabia Saudi
+42003;Etihad Etisalat;Arabia Saudi
+42004;Zain;Arabia Saudi
+42102;Spacetel;Yemen
+42202;Oman Mobile;Oman
+42203;NAWRAS;Oman
+42402;Etisalat;Emiratos Arabes Unidos
+42403;DU;Emiratos Arabes Unidos
+42501;Orange;Israel
+42502;Cellcom;Israel
+42503;Pelephone;Israel
+42505;Jawwal;Palestina
+42506;Wataniya Mobile;Palestina
+42601;Batelco;Bahrein
+42604;VIVA;Bahrein
+42701;Qtel;Qatar
+42702;Vodafone;Qatar
+42888;Unitel;Mongolia
+42901;NTC Mobile;Nepal
+42902;Spice;Nepal
+43211;MCI;Iran
+43404;Unitel;Uzbekistan
+43405;Coscom;Uzbekistan
+43601;Indigo;Tayikistan
+43602;Indigo;Tayikistan
+43604;Babilon;Tayikistan
+43605;Tacom;Tayikistan
+43705;Bimocom/Megacom;Kirguistan
+43709;NUR;Kirguistan
+43801;BCTI;Turkmenistan
+43802;Tmcell;Turkmenistan
+44010;NTT Docomo;Japon
+44050;KDDI;Japon
+44051;KDDI;Japon
+45002;KT;Corea S
+45005;SKTelecom;Corea S
+45006;LGUPlus;Corea S
+45008;KT;Corea S
+45201;VMS / Mobifone;Vietnam
+45202;Vinaphone;Vietnam
+45204;Viettel;Vietnam
+45205;Vietnamobile;Vietnam
+45207;Beeline;Vietnam
+45400;Hong Kong CSL;Hong Kong
+45402;Hong Kong CSL;Hong Kong
+45403;Hutchinson;Hong Kong
+45404;Hutchinson;Hong Kong
+45406;SmarTone Mobile;Hong Kong
+45410;New World;Hong Kong
+45412;China Mobile;Hong Kong
+45416;SUNDAY;Hong Kong
+45418;Hong Kong CSL;Hong Kong
+45419;SUNDAY;Hong Kong
+45501;CTM;Macao
+45503;Hutchinson/T-Systems;Macao
+45602;Latelz;Camboya
+45604;Cadcom;Camboya
+45605;Applifone;Camboya
+45606;Latelz;Camboya
+45608;Mfone;Camboya
+45618;Mfone;Camboya
+45701;Laos Telecom;Laos
+45708;Millicom / Tigo;Laos
+46000;China Mobile;China
+46001;China Unicom;China
+46002;China Mobile;China
+46007;China Mobile;China
+46009;China Unicom;China
+46601;Far EasTone;Taiwan
+46688;Far EasTone;Taiwan
+46689;Vibo;Taiwan
+46692;Chunghwa;Taiwan
+46693;Taiwan Mobile;Taiwan
+46697;Taiwan Mobile;Taiwan
+46699;Taiwan Mobile;Taiwan
+47001;Grameenphone;Bangladesh
+47003;Banglalink;Bangladesh
+47007;Warid Telecom;Bangladesh
+47202;AT&T Wataniya;Maldivas
+50212;Maxis;Malasia
+50213;Celcom TM Touch;Malasia
+50216;Digi;Malasia
+50218;UMobile(MTV3G);Malasia
+50219;Celcom TM Touch;Malasia
+50501;Telstra;Australia
+50502;SignTel;Australia
+50503;Vodafone;Australia
+51001;PT. Satelindo;Indonesia
+51008;Axis;Indonesia
+51010;PT Telkomsel;Indonesia
+51011;XL;Indonesia
+51021;INDOSAT-M3;Indonesia
+51089;Hutchinson 3;Indonesia
+51502;Globe Telecom;Filipinas
+51503;SMART;Filipinas
+51505;Digitel (SUN Cellular);Filipinas
+52000;True Move;Tailandia
+52001;AIS;Tailandia
+52003;AWN;Tailandia
+52004;Real Future;Tailandia
+52005;Dtac;Tailandia
+52018;DTAC;Tailandia
+52099;True Move;Tailandia
+52501;Singtel;Singapur
+52502;Singtel;Singapur
+52505;Starhub;Singapur
+52802;B-MOBILE;Brunei
+53001;Vodafone;Nueva Zelanda
+53024;NZL / Two Degrees;Nueva Zelanda
+53703;Digicel;Papua Nueva Guinea
+53988;Digicel;Tonga
+54101;Telecom TVL;Vanuatu
+54105;Digicel;Vanuatu
+54202;Digitel;Fiji
+54601;Mobilis;Nueva Caledonia
+54715;Pacific Mobile;Francia
+54720;Vini;Francia
+54801;Telecom Cook Island;Cook Island
+54927;Samoatel;Samoa
+60201;Mobinil(ECMS);Egipto
+60202;Vodafone;Egipto
+60203;ETISALAT;Egipto
+60301;ATM;Argelia
+60302;Djezzy;Argelia
+60303;Wataniya Telecom;Argelia
+60400;Medi Telecom;Marruecos
+60401;IAM (Itissalat);Marruecos
+60402;Wana;Marruecos
+60501;Orange;Tunez
+60502;Tunisie Telecom ;Tunez
+60503;Orascom;Tunez
+60506;Tunisie Telecom ;Tunez
+60601;Al Madar;Libia
+60701;Gamcel;Gambia
+60702;Africell;Gambia
+60703;Comium;Gambia
+60801;Orange;Senegal
+60802;Sentel;Senegal
+60901;MATTEL;Mauritania
+60910;Mauritel;Mauritania
+61002;Orange;Mali
+61101;Orange;Guinea
+61103;Intercel;Guinea
+61202;Moov /telecel;Costa de Marfil
+61203;Orange;Costa de Marfil
+61205;MTN;Costa de Marfil
+61301;Onatel (Telmob);Burkina Faso
+61403;Telecel;Niger
+61404;Orange;Niger
+61503;Moov /telecel;Togo
+61601;Libercom;Benin
+61602;Etisalat;Benin
+61701;Cellplus (Orange);Isla Mauricio
+61703;MTML;Isla Mauricio
+61710;Emtel;Isla Mauricio
+61801;LONESTAR;LIBERIA
+61807;Celcom (AT&T);Liberia
+61904;Comium;Sierra Leona
+62002;One Touch;Ghana
+62006;Airtel;Ghana
+62120;Econet;Nigeria
+62130;MTN;Nigeria
+62160;Etisalat;Nigeria
+62203;MIC;Chad
+62303;Orange;Centroafricana Rep.
+62402;Orange;Camerun
+62501;CVMOVEL;Cabo Verde
+62502;T Cap Verd;Cabo Verde
+62601;CST;Sao Tome and Principe
+62701;Orange;Guinea Ecuatorial
+62802;Telecel;Gabon
+62803;Celtel;Gabon
+62910;MTN;Congo
+63001;Vodacom;Congo Rep. Dem.
+63002;Celtel;Congo Rep. Dem.
+63086;Orange;Congo Rep. Dem.
+63089;Orange;Congo Rep. Dem.
+63102;Unitel;Angola
+63104;Movicell;Angola
+63202;MTN;Guinea Bissau
+63203;Orange;Guinea Bissau
+63301;C&W;Seychelles
+63310;Airtel;Seychelles
+63402;Aareba / MTN;Sudan
+63510;MTN;Ruanda
+63512;Rwandatel;Ruanda
+63513;Tigo;Ruanda
+63601;ETC;Etiopia
+63902;Safaricom;Kenia
+63903;KenCell;Kenia
+63905;Essar Telecom;Kenia
+63907;Orange;Kenia
+64003;Zantel;Tanzania
+64004;Vodacom;Tanzania
+64005;Celtel Zain;Tanzania
+64111;Uganda Telecom Limited (UTL);Uganda
+64114;Orange;Uganda
+64122;Warid Telecom;Uganda
+64202;Africell;Burundi
+64282;Telecel;Burundi
+64301;MCELL;Mozambique
+64303;Movitel;Mozambique
+64304;Vodacom;Mozambique
+64502;MTN;Zambia
+64503;Cellz(Zamtel);Zambia
+64601;Madacom / ZAIN;Madagascar
+64602;Orange;Madagascar
+64604;Telma;Madagascar
+64700;Orange;Reunion/ Mayotte
+64801;NetOne;Zimbabwe
+64803;Telecel;Zimbabwe
+64804;ECONET;Zimbabwe
+64901;MTC;Namibia
+64903;Leo (Cellone);Namibia
+65001;TNM Telekom;Malawi
+65202;Orange;Botswana
+65310;MTN;Swazilandia
+65501;Vodacom;Sudafrica
+65507;CELL C;Sudafrica
+65510;MTN;Sudafrica
+70267;BLT;Belice
+70401;Claro;Guatemala
+70403;Movistar;Guatemala
+70601;CTE Personal;El Salvador
+70602;Digicel;El Salvador
+70604;Telefonica Moviles;El Salvador
+70800;Megatel;Honduras
+70802;Tigo;Honduras
+70840;Digicel;Honduras
+71021;Enitel;Nicaragua
+71030;Telefonica Moviles;Nicaragua
+71201;ICE;Costa Rica
+71203;Claro;Costa Rica
+71204;Telefonica;Costa Rica
+71401;C&W;Panama
+71402;Movistar;Panama
+71403;Claro;Panama
+71606;Movistar;Peru
+71607;Nextel;Peru
+71610;Claro;Peru
+71617;Entel;Peru
+72207;Telefonica Moviles;Argentina
+72231;Claro;Argentina
+72234;TelecomPersonal;Argentina
+72400;Nextel;Brasil
+72402;TIM Brasil;Brasil
+72403;TIM Brasil;Brasil
+72404;TIM Brasil;Brasil
+72405;Claro;Brasil
+72406;VIVO;BRASIL
+72410;VIVO;BRASIL
+72411;VIVO;BRASIL
+72416;14 Brasil Telecom;Brasil
+72423;VIVO MG;BRASIL
+72424;Amazonia Celular;Brasil
+72431;TNL PCS;Brasil
+73001;Entel;Chile
+73002;Movistar;Chile
+73003;Claro;Chile
+73008;VTR;Chile
+73210;Comcel;Colombia
+73211;Colombia Movil;Colombia
+73212;Movistar;Colombia
+73402;Digitel;Venezuela
+73404;Movistar;Venezuela
+73406;Movilnet;Venezuela
+73601;Nuevatel;Bolivia
+73602;Entel;Bolivia
+73603;Telefonica Cell;BOLIVIA
+73801;U-Mobile/Digicel;Guyana
+74000;Telefonica Ecuador;Ecuador
+74001;Conecel;Ecuador
+74002;CNT;Ecuador
+74401;Hola;Paraguay
+74402;Claro;Paraguay
+74404;Tigo;Paraguay
+74602;Telesur;Surinam
+74801;Antel;Uruguay
+74807;Movistar;Uruguay
+74810;Claro;Uruguay
+90105;Thuraya;Emiratos Arabes Unidos
+90112;MCP;Noruega
+90114;AeroMobile;Noruega
+90115;OnAir;Maritime
+90119;Vodafone;Malta
+90121;Seanet;Suecia
+90126;TIM;Italia
+90128;Vodafone M2M Malta;Malta
+90131;Orange M2M;Francia
+90137;Transatel;Francia
+90139;MTX Connect;Luxemburgo
+90140;Telekom Deutschland;Alemania
+90143;EMnify GmbH;Alemania

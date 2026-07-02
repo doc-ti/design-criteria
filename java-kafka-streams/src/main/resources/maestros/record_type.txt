@@ -1,0 +1,7 @@
+record_type
+sgsnPDPRecord
+ggsnPDPRecord
+sgsnSMORecord
+sgsnSMTRecord
+egsnPDPRecord
+pGWRecord

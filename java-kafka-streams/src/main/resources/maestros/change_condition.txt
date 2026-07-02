@@ -1,0 +1,8 @@
+change_condicion
+qoSChange
+tariffTime
+recordClosure
+failureHandlingContinueOngoing
+failureHandlingRetryandTerminateOngoing
+failureHandlingTerminateOngoing
+endOfPDUSession

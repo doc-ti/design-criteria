@@ -1,0 +1,299 @@
+package edu.comillas.lambda;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.TimeZone;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpHost;
+import org.apache.http.HttpResponse;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.BasicCredentialsProvider;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
+import org.apache.http.util.EntityUtils;
+import org.apache.kafka.streams.processor.api.Processor;
+import org.apache.kafka.streams.processor.api.ProcessorContext;
+import org.apache.kafka.streams.processor.api.Record;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestClientBuilder;
+import org.elasticsearch.client.RestClientBuilder.HttpClientConfigCallback;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.xcontent.XContentType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class RTProcessor implements Processor<String, String, String, String> {
+	private static final Logger LOG = LoggerFactory.getLogger(RTProcessor.class);
+    private HttpClient httpClient;
+    private ObjectMapper mapper;
+    private TypeReference<List<String>> typeRef;
+	SimpleDateFormat sdf = new SimpleDateFormat("u-HH:mm") ;
+	SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ") ;
+	
+	
+    RestClientBuilder builderES ;
+    RestHighLevelClient clientES ;
+    String indexName = "lambda_felipe" ;
+
+    ProcessorContext<String, String> _context ;
+    
+//    String baseID = UUID.randomUUID().toString() ;
+    String baseID = "str_" + RandomStringUtils.randomAlphanumeric(12) ;
+    
+    int counterTags = 1 ;
+    int counterRecords = 0 ;
+    String currentTag = baseID + "_" + String.format( "%06d", counterTags) ;
+
+    
+    class MyPeriod {
+    	String tag = "Not found" ;
+    	String dMin = "0-00:00" ;
+    	String dMax = "0-00:00" ;
+    	
+    	public MyPeriod(String line) {
+    		
+    		String aux[] = line.split(",") ;
+    		if ( aux.length == 5) {
+    			tag = aux[0] ;
+    			dMin= aux[1] + "-" + aux[3] ;
+    			dMax= aux[2] + "-" + aux[4] ;
+    		}
+    	}
+    	
+    	public String toString() {
+    		return tag + " / " + dMin + " -- " + dMax ; 
+    	}
+
+		public boolean comparePeriod(String inputPer) {
+			
+			return ( inputPer.compareTo(dMin)>= 0 ) && ( inputPer.compareTo(dMax) < 0 );
+		}
+    	
+    }
+
+    ArrayList<MyPeriod> periods = new ArrayList<MyPeriod> () ;
+    
+    Hashtable<String,String> nodos = new Hashtable<String,String> () ; 
+    
+   
+	@Override
+    public void init(final ProcessorContext<String, String> context) {
+
+		sdf2.setTimeZone(TimeZone.getTimeZone("CET"));
+		
+		final CredentialsProvider credentialsProvider =
+			    new BasicCredentialsProvider();
+			credentialsProvider.setCredentials(AuthScope.ANY,
+			    new UsernamePasswordCredentials("lambda", "pass4lambda"));
+
+			builderES = RestClient.builder(
+			    new HttpHost("192.168.80.34", 9201))
+			    .setHttpClientConfigCallback(new HttpClientConfigCallback() {
+			        @Override
+			        public HttpAsyncClientBuilder customizeHttpClient(
+			                HttpAsyncClientBuilder httpClientBuilder) {
+			            return httpClientBuilder
+			                .setDefaultCredentialsProvider(credentialsProvider);
+			        }
+			    });  
+			
+		clientES = new RestHighLevelClient(builderES);
+		
+    	_context = context ;
+        this.httpClient = HttpClientBuilder.create().build();
+    	
+//        context.schedule(Duration.ofSeconds(1), PunctuationType.STREAM_TIME, timestamp -> {
+//            try (final KeyValueIterator<String, Integer> iter = kvStore.all()) {
+//                while (iter.hasNext()) {
+//                    final KeyValue<String, Integer> entry = iter.next();
+//                    context.forward(new Record<>(entry.key, entry.value.toString(), timestamp));
+//                }
+//            }
+//        });
+//        kvStore = context.getStateStore("Counts");
+        
+        
+        try (BufferedReader br = new BufferedReader(new FileReader("./turnos.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+            	periods.add(new MyPeriod(line)) ;
+            }
+        } catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.exit(-1) ;
+		}
+        
+        for ( MyPeriod p : periods) {
+        	System.out.println (p) ;
+        }
+        
+
+        try (BufferedReader br = new BufferedReader(new FileReader("./nodos.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+            	String aux[] = line.split(",") ;
+            	if ( aux.length == 2 ) {
+            		nodos.put(aux[0].toLowerCase(), aux[1]) ;
+            	}
+            }
+        } catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.exit(-1) ;
+		}
+        
+        System.out.println(nodos) ;
+        
+        
+    }
+
+    @Override
+    public void process(final Record<String, String> record) {
+    	
+    	counterRecords++ ;
+    	
+//    	System.out.println("INPUT: "  + record.value() ) ;
+//    	System.out.println( "THREAD: " + Thread.currentThread().getName() ) ;
+    	
+//    	Record<String, String> recordOut = new Record<String, String>(record.key(),
+//    					currentTag + ";" + 
+//    	    			Integer.toString( counterRecords) + ";" +
+//    	    			_context.recordMetadata().get().topic() + ":" + _context.recordMetadata().get().partition() + ":" + _context.recordMetadata().get().offset() + ";" +  
+////    	    			Integer.toString( counterRecords) + ";" +
+//    	    			record.value(), record.timestamp()) ;
+//		_context.forward(recordOut);
+
+    	
+    	String input = record.value();
+    	
+    	String aux[] = input.split(" |\\n") ;
+    	
+
+    	for (int nn = 0 ; nn< aux.length ; nn++) {
+    		aux[nn] = aux[nn].replaceAll("\\r" , "") ;
+    	}
+
+    	String nodo = "" ;
+    	String grupo = "" ;
+    	String indic = "" ;
+    	String periodo = "" ;
+    	Long ts = 0L ;
+    	String  val = "0" ;
+    	if ( aux.length%3 == 0 ) {
+        	for (int nn = 0 ; nn< aux.length ; nn++) {
+        		aux[nn] = aux[nn].replaceAll("\\r" , "") ;
+        		switch ( nn%3 ) {
+	        		case 0 :
+	        			int pos = aux[nn].indexOf(".") ;
+	        			nodo = aux[nn].substring(0,pos) ;
+	        			indic = aux[nn].substring(pos+1) ;
+	        			grupo = nodos.get(nodo.toLowerCase()) ;
+	        			break ;
+	        			
+	        		case 1:
+	        			val = (aux[nn]) ;
+	        			break ;
+	        			
+	        		case 2:
+	        			int numx = (nn+1)/3 ;
+	        			ts = Long.parseLong(aux[nn]) ;
+	        			periodo = buscaPeriodo(sdf.format(new Date(ts*1000))) ;
+	        			
+	        			String json = String.format("{ \"value\": %s, \"nodo\": \"%s\", \"indic\": \"%s\", \"grupo\": \"%s\", \"periodo\": \"%s\", \"@timestamp\" : \"%s\", \"pos\" : %d , \"partition\" : %d, \"offset\" : %d}", 
+	        					val, nodo, indic, grupo, periodo, sdf2.format(new Date(ts*1000)),
+	        					numx,
+	        					_context.recordMetadata().get().partition(),
+	        					_context.recordMetadata().get().offset()) ;
+//	        			System.out.println(json) ;
+	        			
+	                    IndexRequest request = new IndexRequest(indexName).source(json, XContentType.JSON);
+
+	                    // Envía la solicitud a Elasticsearch y verifica si hubo errores
+//						IndexResponse response;
+						try {
+							clientES.index(request, RequestOptions.DEFAULT);
+//							response = clientES.index(request, RequestOptions.DEFAULT);
+//		                    if (response.getResult() == DocWriteResponse.Result.CREATED) {
+//		                        System.out.println("Documento creado en Elasticsearch: " + response.getId());
+//		                    } else if (response.getResult() == DocWriteResponse.Result.UPDATED) {
+//		                        System.out.println("Documento actualizado en Elasticsearch: " + response.getId());
+//		                    }
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+//							e.printStackTrace();
+						}
+	        			
+						if ( counterRecords%500 == 0 ) {
+							System.out.println ( (new Date().toString() ) + "VOY por " + sdf2.format(new Date(ts*1000))) ;
+		        			System.out.println("JSON: " + json) ;
+						}
+						
+	        			break ;
+        		}
+        	}
+    		
+    	} else {
+    		System.out.println ("ERROR EN EL DESPIECE " + aux.length + " - " + input) ;
+    	}
+
+
+    }
+
+ 	private String buscaPeriodo(String inputPer) {
+
+ 		for ( MyPeriod p : periods) {
+ 			if ( p.comparePeriod(inputPer) ) {
+ 				return p.tag ;
+ 			}
+ 		}
+ 		return "Not found";
+	}
+
+	@Override
+    public void close() {
+    	
+    	System.out.println("CLOSING PROCESSOR " + this.toString());
+    }
+
+    private List<String> makeHttpRequest(String url) {
+        //System.out.println("Inicio de la petición a las " + System.nanoTime());
+        HttpGet httpGet = new HttpGet(url);
+        try {
+            HttpResponse response = httpClient.execute(httpGet);
+            int statusCode = response.getStatusLine().getStatusCode();
+            if (statusCode >= 200 && statusCode < 300) {
+                HttpEntity entity = response.getEntity();
+                //Formato JSON
+                String responseString = EntityUtils.toString(entity);
+                //System.out.println("Final de la petición a las " + System.nanoTime());
+                //Convierte responseString (JSON) al tipo de typeRef (List<String>)
+                return this.mapper.readValue(responseString, this.typeRef);
+            } else {
+                System.out.println("Error: Received HTTP status code " + statusCode + " for URL: " + url);
+                return Collections.emptyList();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return Collections.emptyList();  // Devolver una lista vacía en caso de error
+        }
+    }
+}
