@@ -84,6 +84,7 @@ public class ObjectProcessor implements Processor<String, String, String, String
 
 	private boolean spoolInfoFichero;
 	private boolean loadIntoCassandra = false ;
+	private boolean loadIntoES = false ;
 
 	private double percentErrores = 0 ;
     
@@ -122,8 +123,13 @@ public class ObjectProcessor implements Processor<String, String, String, String
 
 		indexName = PropertyLoader.getProperty("indexName", indexName) ;
 		mapper = new ObjectMapper();
+
 		
-//		ingester = MyESUtils.init(props) ;
+		loadIntoES = (PropertyLoader.getProperty("load_es", "false").compareToIgnoreCase("true") == 0 ); 
+		
+		if ( loadIntoES ) {
+			ingester = MyESUtils.init(props) ;
+		}
 		
 		forwardDataToTopic  = (PropertyLoader.getProperty("topicOut" ) != null )  ;
 		

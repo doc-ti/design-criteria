@@ -1,4 +1,4 @@
-mcc+mnc;operador;pais
+mcc_mnc;operator;country_operator
 20201;Cosmote;Grecia
 20205;Vodafone Panafon;Grecia
 20209;Qtelecom;Grecia

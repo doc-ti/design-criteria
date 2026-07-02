@@ -35,11 +35,30 @@ public class MyFileWriter {
 	String actualFilename = "" ;
 	private boolean hasHeader = true ;
 	
+    public static void createDirectory(String pathIn) {
+        
+        File dir= new File(pathIn);
+
+        if (!dir.exists()) {
+            boolean creado = dir.mkdirs(); // crea todos los directorios necesarios
+            if (creado) {
+            	LOG.info("Path {} created ", pathIn);
+            } else {
+                LOG.error("Path cannot be created {}", pathIn);
+                System.exit(-1);
+            }
+        } 
+    }
+	
 	
 	public MyFileWriter(String filesPathIn, String basenameIn, int maxRecordsIn, boolean hasHeaderIn) {
 		hasHeader  = hasHeaderIn ;
 		filesPathTmp = filesPathIn + "/tmp-files/";
 		filesPathClosed = filesPathIn + "/closed-files/" ;
+		
+		createDirectory(filesPathTmp);
+		createDirectory(filesPathClosed);
+		
 		maxRecords = maxRecordsIn ;
 		basename = basenameIn ;
 		if ( maxRecords < 1000 ) 

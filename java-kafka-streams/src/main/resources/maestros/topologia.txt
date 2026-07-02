@@ -1,4 +1,4 @@
-Rango Poblacional;Municipio;Codigo Postal;Provincia
+poblational_range;municipality;postal_code;region
 >500K;ALBALAT DELS SORELLS;46135;VALENCIA
 >500K;BARCELONA;8001;BARCELONA
 >500K;BARCELONA;8002;BARCELONA

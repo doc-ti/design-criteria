@@ -18,8 +18,8 @@ public class CDRFieldManager {
 	public static String F_TS_SRC = "@ts_source" ;
 	public static String F_HOST_SRC = "@host_source" ;
 	
-	public static String F_DURACION = "duracion" ;
-	public static String F_TECNO = "tecnologia" ;
+	public static String F_DURACION = "duration" ;
+	public static String F_TECNO = "tecnology" ;
 	public static String F_LATENCY = "latency_ms" ;
 	
 	
@@ -29,14 +29,14 @@ public class CDRFieldManager {
 			F_HOST_PROCESS,
 			F_TS_PROCESS,
 			F_LATENCY,
-			"Municipio",
-			"operador",
-			"pais",
-			"Provincia",
-			"Rango_Poblacional",
+			"municipality",
+			"operator",
+			"country",
+			"region",
+			"population_range",
 			"record_type",
 			"tecnologia",
-			"duracion",
+			"duration",
 			"@timestamp"
 	};
 	

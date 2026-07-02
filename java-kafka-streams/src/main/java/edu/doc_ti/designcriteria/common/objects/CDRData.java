@@ -161,6 +161,13 @@ public class CDRData implements ObjStreaming {
 		System.out.println ( cdr.getHeader() ) ;
 		System.out.println ( cdr.toDataString()) ;
 		System.out.println ( cdr.toJSonString()) ;
+
+		
+		for (int pos = 0 ; pos < NUM_FIELDS_TOTAL ; pos++) {
+			System.out.println(CDRFieldManager.fieldNames.get(pos) + " : " + cdr.getCdrData().get(CDRFieldManager.fieldNames.get(pos))) ;
+		}
+		
+		
 		
 		ObjectMapper mapper = new ObjectMapper();
 
