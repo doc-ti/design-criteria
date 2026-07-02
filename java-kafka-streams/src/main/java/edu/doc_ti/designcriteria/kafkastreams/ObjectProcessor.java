@@ -83,6 +83,7 @@ public class ObjectProcessor implements Processor<String, String, String, String
 	private int MODE = -1 ;
 
 	private boolean spoolInfoFichero;
+	private boolean loadIntoCassandra = false ;
 
 	private double percentErrores = 0 ;
     
@@ -127,7 +128,9 @@ public class ObjectProcessor implements Processor<String, String, String, String
 		forwardDataToTopic  = (PropertyLoader.getProperty("topicOut" ) != null )  ;
 		
 		spoolInfoFichero = (PropertyLoader.getProperty("info_fichero", "false").compareToIgnoreCase("true") == 0 ); 
-		
+
+		loadIntoCassandra = (PropertyLoader.getProperty("load_cassandra", "false").compareToIgnoreCase("true") == 0 ); 
+
 
 		try {
 				percentErrores  = Double.parseDouble(PropertyLoader.getProperty("%discards", "0") ); 
@@ -136,7 +139,9 @@ public class ObjectProcessor implements Processor<String, String, String, String
 		LOG.info("%records discarded: {}", percentErrores);
 
 
-		prepareCassandra() ;
+		if ( loadIntoCassandra ) {
+			prepareCassandra() ;
+		}
 	}
 
 	
@@ -195,7 +200,6 @@ public class ObjectProcessor implements Processor<String, String, String, String
 					}
 					countRegsFile++ ;
 				}
-				
 				
 				break ;
 			case MODE_BITSTREAM :
@@ -289,7 +293,7 @@ public class ObjectProcessor implements Processor<String, String, String, String
 					        );
     			}
     			
-    			if ( session != null && auxMap != null ) {
+    			if ( loadIntoCassandra && session != null && auxMap != null ) {
     				loadIntoCassandra(auxMap) ;
     			}
 			}
